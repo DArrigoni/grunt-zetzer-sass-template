@@ -1,6 +1,36 @@
-{{= it.include('header') }}
+{ "template": "main" }
 
 <h1>Hello World!</h1>
-<img src='images/stormtrooper.jpg'>
+<p>
+  <img src='images/stormtrooper.jpg'>
+</p>
 
-{{= it.include('footer') }}
+<p>
+<ul class="tabs" data-tab>
+  <li class="tab-title active"><a href="#panel1">Tab 1</a></li>
+  <li class="tab-title"><a href="#panel2">Tab 2</a></li>
+  <li class="tab-title"><a href="#panel3">Tab 3</a></li>
+  <li class="tab-title"><a href="#panel4">Tab 4</a></li>
+</ul>
+<div class="tabs-content">
+  <div class="content active" id="panel1">
+    <p>This is the first panel of the basic tab example. You can place all sorts of content here including a grid.</p>
+  </div>
+  <div class="content" id="panel2">
+    <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+  </div>
+  <div class="content" id="panel3">
+    <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+  </div>
+  <div class="content" id="panel4">
+    <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+  </div>
+</div>
+</p>
+
+<a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">Has Dropdown</a>
+<ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+  <li><a href="#">This is a link</a></li>
+  <li><a href="#">This is another</a></li>
+  <li><a href="#">Yet another</a></li>
+</ul>
